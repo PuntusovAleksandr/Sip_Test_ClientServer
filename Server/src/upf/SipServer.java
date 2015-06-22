@@ -120,7 +120,9 @@ public class SipServer extends JFrame implements SipListener {
 
     private void onOpen(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_onOpen
         try {
-            this.ip = InetAddress.getLocalHost().getHostAddress();
+//            this.ip = InetAddress.getLocalHost().getHostAddress();
+//            this.ip = "127.0.0.1";
+            this.ip = "127.10.0.1";
 
             this.sipFactory = SipFactory.getInstance();
             this.sipFactory.setPathName("gov.nist");
